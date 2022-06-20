@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "django_rest_and_graphql_study"
+version = "0.1.0"
+description = ""
+authors = ["Pedro Garcia <eng.pedrohenriquegarcia@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^4.0.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
