@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-import rest_api, graphql_api
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('rest/', include(rest_api.urls)),
-    path('graph/', include(graphql_api.urls))
+    path('auth/', include('rest_framework.urls')),
+    path('rest-api/', include('rest_api.urls')),
+    path('graph-api/', include('graphql_api.urls')),
 ]
